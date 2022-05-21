@@ -92,3 +92,5 @@ print(class_names[index[0][0]])
 (train_images, train_labels), (test_images, test_labels) = cifar10.load_data()
 
 show_img(test_index, 'test', 250)
+
+cnn.evaluate(test_images, test_labels, batch_size=64, verbose=2)
